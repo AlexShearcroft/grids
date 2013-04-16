@@ -1,0 +1,101 @@
+
+/* Grid layout
+	
+	<div class="grid">
+		<div class="grid__layout"><p>Grid</p></div>
+
+		<div class="grid__layout grid__layout--one-half"><p>one-half</p></div>
+		<div class="grid__layout grid__layout--one-half"><p>one-half</p></div>
+		
+		<div class="grid__layout grid__layout--one-third"><p>one-third</p></div>
+		<div class="grid__layout grid__layout--one-third"><p>one-third</p></div>
+		<div class="grid__layout grid__layout--one-third"><p>one-third</p></div>
+
+		<div class="grid__layout grid__layout--one-quarter"><p>one-quarter</p></div>
+		<div class="grid__layout grid__layout--one-quarter"><p>one-quarter</p></div>
+		<div class="grid__layout grid__layout--one-quarter"><p>one-quarter</p></div>
+		<div class="grid__layout grid__layout--one-quarter"><p>one-quarter</p></div>
+
+		<div class="grid__layout grid__layout--one-third"><p>one-third</p></div>
+		<div class="grid__layout grid__layout--two-thirds"><p>two-thirds</p></div>
+
+		<div class="grid__layout grid__layout--one-half"><p>one-half</p></div>
+		<div class="grid__layout grid__layout--one-quarter"><p>one-quarter</p></div>
+		<div class="grid__layout grid__layout--one-quarter"><p>one-quarter</p></div>
+	
+		<div class="grid__layout grid__layout--one-quarter"><p>one-quarter</p></div>
+		<div class="grid__layout grid__layout--three-quarters"><p>three-quarters</p></div>
+
+		<div class="grid__layout grid__layout--one-sixth"><p>one-sixth</p></div>
+		<div class="grid__layout grid__layout--one-sixth"><p>one-sixth</p></div>
+		<div class="grid__layout grid__layout--one-sixth"><p>one-sixth</p></div>
+		<div class="grid__layout grid__layout--one-sixth"><p>one-sixth</p></div>
+		<div class="grid__layout grid__layout--one-sixth"><p>one-sixth</p></div>
+		<div class="grid__layout grid__layout--one-sixth"><p>one-sixth</p></div>
+	</div>
+
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid {
+	border: 1px solid black;
+	display: block;
+	letter-spacing: -0.31em;
+	margin: 0 auto;
+	max-width: 60em;
+	overflow: hidden;
+	padding: 4px;
+}
+
+.grid__layout {
+	display: inline-block;
+	letter-spacing: normal;
+	line-height: 40px;
+	min-height: 40px;
+	padding: 4px;
+	text-align: left;
+	width: 100%;
+}
+
+.grid__layout p {
+	background: steelblue;
+	color: white;
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+
+.grid__layout--one-quarter {
+	width: 25%;
+}
+
+.grid__layout--one-third {
+	width: 33.33333333%;
+}
+
+.grid__layout--one-half {
+	width: 50%;
+}
+
+.grid__layout--two-thirds {
+	width: 66.66666667%;
+}
+
+.grid__layout--three-quarters {
+	width: 75%;
+}
+
+.grid__layout--one-sixth {
+	width: 16.666666667%;
+}
+
+@media all and (min-width: 320px) and (max-width: 640px) {
+	.grid__layout {
+		width: 100%;
+	}
+}
